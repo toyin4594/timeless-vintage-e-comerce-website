@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .vintage-button {
+    @apply px-6 py-3 bg-amber-800 text-amber-50 rounded-md hover:bg-amber-900 
+           transition-colors duration-200 font-medium text-sm uppercase tracking-wider
+           shadow-sm hover:shadow-md;
+  }
+
+  .vintage-input {
+    @apply block w-full px-4 py-2 border border-amber-200 rounded-md 
+           focus:ring-2 focus:ring-amber-500 focus:border-amber-500
+           bg-white placeholder-amber-400;
+  }
+}
